@@ -1,0 +1,12 @@
+2025-02-14 17:26:38.715 +07:00 [INF] Now listening on: http://localhost:5013
+2025-02-14 17:26:38.808 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-14 17:26:38.809 +07:00 [INF] Hosting environment: Development
+2025-02-14 17:26:38.809 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-02-14 17:26:39.419 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-02-14 17:26:39.646 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 233.8905ms
+2025-02-14 17:26:39.649 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-14 17:26:39.652 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.9497ms
+2025-02-14 17:26:39.826 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-02-14 17:26:39.861 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.4266ms
+2025-02-14 17:26:39.891 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-02-14 17:26:39.904 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.9758ms
