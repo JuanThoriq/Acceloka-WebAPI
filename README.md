@@ -50,30 +50,40 @@ Acceloka Web API adalah sebuah sistem pemesanan tiket online (bioskop, kereta, k
 
 ## Cara Menjalankan
 
-1. **Clone** repository:
+1. **Clone** repository
+
    ```bash
    git clone https://github.com/username/Acceloka-WebAPI.git
    cd Acceloka-WebAPI
 
 2. Setup Connection String
-- Gunakan User Secrets atau environment variable untuk ConnectionStrings:AccelokaDB.
-- Contoh user secrets:
-dotnet user-secrets init
-dotnet user-secrets set "ConnectionStrings:AccelokaDB" "Server=localhost;Database=Acceloka;User Id=sa;Password=xxx;Encrypt=False"
+   - Gunakan User Secrets atau environment variable untuk ConnectionStrings:AccelokaDB.
+   - Contoh user secrets:
+   
+   ```bash
+   dotnet user-secrets init
+   dotnet user-secrets set "ConnectionStrings:AccelokaDB" "Server=localhost;Database=Acceloka;User Id=sa;Password=xxx;Encrypt=False"
+   ``` 
 
 3. Restore & Build
-dotnet restore
-dotnet build
+
+   ```bash
+   dotnet restore
+   dotnet build
+   ```
 
 4. Run
-dotnet run
-Atau dari Visual Studio: F5 / Start Debug.
+
+   ```bash
+   dotnet run
+   ```
+   - Atau dari Visual Studio: F5 / Start Debug.
 
 5. Akses Swagger
-- Buka https://localhost:<port>/swagger untuk dokumentasi endpoint.
+   - Buka https://localhost:<port>/swagger untuk dokumentasi endpoint.
 
-Visualisasi Database
+## Visualisasi Database
 ![Acceloka ERD](./Database/AccelokaERD.png)
 
-Lisensi
+## Lisensi
 Proyek ini berlisensi MIT (opsional, tergantung kebijakanmu).
