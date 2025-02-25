@@ -12,3 +12,4 @@ C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini P
 C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka.Entities\bin\Debug\net8.0\Acceloka.Entities.runtimeconfig.json
 C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka.Entities\obj\Debug\net8.0\Acceloka.Entities.csproj.AssemblyReference.cache
 C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka.Entities\obj\Debug\net8.0\Acceloka.Entities.genruntimeconfig.cache
+C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka.Entities\obj\Debug\net8.0\Acceloka.Entities.sourcelink.json

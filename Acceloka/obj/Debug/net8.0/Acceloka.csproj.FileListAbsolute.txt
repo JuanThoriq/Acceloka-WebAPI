@@ -165,3 +165,4 @@ C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini P
 C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\obj\Debug\net8.0\Acceloka.sourcelink.json

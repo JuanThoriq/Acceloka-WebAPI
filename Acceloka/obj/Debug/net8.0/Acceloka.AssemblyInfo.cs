@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Acceloka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d22087604ea308f7f9d27334fcff1ee42cfd571")]
 [assembly: System.Reflection.AssemblyProductAttribute("Acceloka")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Acceloka")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,20 @@
+# Ignore folder yang memiliki extension folder tersebut di root : .vs/ dan logs/
+# Ignore folder yang memiliki extension folder tersebut di level apa pun : **/bin dan **/obj/
+# Ignore file yang memilki extension file tersebut di level apapun: *.user, *.suo, *.bak, *.log 
+
+
+# Build Folders
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Logs (kalau ingin di-ignore)
+# logs/
+# *.log
+
+# Database backups
+# *.bak

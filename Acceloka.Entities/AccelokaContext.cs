@@ -25,7 +25,7 @@ public partial class AccelokaContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=Acceloka;User Id=sa;Password=Tanggallahir9;Encrypt=False");
+            optionsBuilder.UseSqlServer("");
         }
     }
 

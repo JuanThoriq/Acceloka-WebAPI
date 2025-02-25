@@ -3,88 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\implementations\\bookticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\implementations\\bookticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\models\\request\\editbookedticketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\models\\request\\editbookedticketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\models\\request\\bookticketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\models\\request\\bookticketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\models\\request\\bookticketrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\models\\request\\bookticketrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\models\\request\\editbookedticketrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\models\\request\\editbookedticketrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\implementations\\editbookedticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\implementations\\editbookedticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\implementations\\revoketicketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\implementations\\revoketicketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\models\\response\\editbookedticketresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\models\\response\\editbookedticketresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\models\\response\\revoketicketresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\models\\response\\revoketicketresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\implementations\\bookedticketdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\implementations\\bookedticketdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\interfaces\\ieditbookedticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\interfaces\\ieditbookedticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\interfaces\\ibookticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\interfaces\\ibookticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\interfaces\\irevoketicketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\interfaces\\irevoketicketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\interfaces\\ibookedticketdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\interfaces\\ibookedticketdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\services\\interfaces\\iavailableticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\services\\interfaces\\iavailableticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B32107C2-EA55-47EC-A483-734D3E9EA197}|Acceloka.Entities\\Acceloka.Entities.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka.entities\\accelokacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B32107C2-EA55-47EC-A483-734D3E9EA197}|Acceloka.Entities\\Acceloka.Entities.csproj|solutionrelative:acceloka.entities\\accelokacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\acceloka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\acceloka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,260 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Controllers\\BookingController.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "Acceloka\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAkwKYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T08:48:25.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\appsettings.json",
-              "RelativeDocumentMoniker": "Acceloka\\appsettings.json",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\appsettings.json",
-              "RelativeToolTip": "Acceloka\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-12T18:43:10.966Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Program.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Program.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Program.cs",
-              "RelativeToolTip": "Acceloka\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T18:43:26.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\BookTicketService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Implementations\\BookTicketService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\BookTicketService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Implementations\\BookTicketService.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAYwDsAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T07:17:32.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TicketController.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Controllers\\TicketController.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Controllers\\TicketController.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Controllers\\TicketController.cs",
-              "RelativeToolTip": "Acceloka\\Controllers\\TicketController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwD4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T09:13:34.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditBookedTicketItem.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\EditBookedTicketItem.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Models\\Request\\EditBookedTicketItem.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\EditBookedTicketItem.cs",
-              "RelativeToolTip": "Acceloka\\Models\\Request\\EditBookedTicketItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T03:51:48.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookTicketItem.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\BookTicketItem.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Models\\Request\\BookTicketItem.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\BookTicketItem.cs",
-              "RelativeToolTip": "Acceloka\\Models\\Request\\BookTicketItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T08:24:14.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookTicketRequest.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\BookTicketRequest.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Models\\Request\\BookTicketRequest.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\BookTicketRequest.cs",
-              "RelativeToolTip": "Acceloka\\Models\\Request\\BookTicketRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T08:29:37.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EditBookedTicketRequest.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\EditBookedTicketRequest.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Models\\Request\\EditBookedTicketRequest.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Request\\EditBookedTicketRequest.cs",
-              "RelativeToolTip": "Acceloka\\Models\\Request\\EditBookedTicketRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T03:52:12.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EditBookedTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\EditBookedTicketService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Implementations\\EditBookedTicketService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\EditBookedTicketService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Implementations\\EditBookedTicketService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwDoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T04:00:11.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RevokeTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\RevokeTicketService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Implementations\\RevokeTicketService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\RevokeTicketService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Implementations\\RevokeTicketService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wDwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T18:36:24.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EditBookedTicketResponse.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Response\\EditBookedTicketResponse.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Models\\Response\\EditBookedTicketResponse.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Response\\EditBookedTicketResponse.cs",
-              "RelativeToolTip": "Acceloka\\Models\\Response\\EditBookedTicketResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T03:52:39.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RevokeTicketResponse.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Response\\RevokeTicketResponse.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Models\\Response\\RevokeTicketResponse.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Models\\Response\\RevokeTicketResponse.cs",
-              "RelativeToolTip": "Acceloka\\Models\\Response\\RevokeTicketResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T18:35:30.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BookedTicketDetailService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\BookedTicketDetailService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Implementations\\BookedTicketDetailService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Implementations\\BookedTicketDetailService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Implementations\\BookedTicketDetailService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wDEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:20:15.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IEditBookedTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IEditBookedTicketService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Interfaces\\IEditBookedTicketService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IEditBookedTicketService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Interfaces\\IEditBookedTicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T03:59:18.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IRevokeTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IRevokeTicketService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Interfaces\\IRevokeTicketService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IRevokeTicketService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Interfaces\\IRevokeTicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T18:34:56.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IBookedTicketDetailService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IBookedTicketDetailService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Interfaces\\IBookedTicketDetailService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IBookedTicketDetailService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Interfaces\\IBookedTicketDetailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:16:07.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IBookTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IBookTicketService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Interfaces\\IBookTicketService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IBookTicketService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Interfaces\\IBookTicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T07:12:43.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IAvailableTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IAvailableTicketService.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Services\\Interfaces\\IAvailableTicketService.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Services\\Interfaces\\IAvailableTicketService.cs",
-              "RelativeToolTip": "Acceloka\\Services\\Interfaces\\IAvailableTicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T19:51:01.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "AccelokaContext.cs",
               "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka.Entities\\AccelokaContext.cs",
               "RelativeDocumentMoniker": "Acceloka.Entities\\AccelokaContext.cs",
               "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka.Entities\\AccelokaContext.cs",
               "RelativeToolTip": "Acceloka.Entities\\AccelokaContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T12:24:53.633Z"
+              "WhenOpened": "2025-02-24T16:12:33.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Acceloka.csproj",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Acceloka.csproj",
-              "RelativeDocumentMoniker": "Acceloka\\Acceloka.csproj",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Acceloka.csproj",
-              "RelativeToolTip": "Acceloka\\Acceloka.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-12T19:31:20.442Z"
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Program.cs",
+              "RelativeDocumentMoniker": "Acceloka\\Program.cs",
+              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Program.cs",
+              "RelativeToolTip": "Acceloka\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T14:00:57.919Z",
+              "EditorCaption": ""
             }
           ]
         }
