@@ -86,4 +86,4 @@ Acceloka Web API adalah sebuah sistem pemesanan tiket online (bioskop, kereta, k
 ![Acceloka ERD](./Database/AccelokaERD.png)
 
 ## Lisensi
-Proyek ini berlisensi MIT (opsional, tergantung kebijakanmu).
+Proyek ini berlisensi MIT.
