@@ -1,38 +1,44 @@
-﻿using Acceloka.Entities;
+﻿using MediatR;
+using Acceloka.Entities;
 using Acceloka.Exceptions;
 using Acceloka.Models.Request;
 using Acceloka.Models.Response;
-using Acceloka.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Azure.Core;
 
-
-namespace Acceloka.Services.Implementations
+namespace Acceloka.Features.Booking.Commands.BookTicket
 {
-    public class BookTicketService : IBookTicketService
+    public class BookTicketCommandHandler
+        : IRequestHandler<BookTicketCommand, BookTicketResponse>
     {
         private readonly AccelokaContext _db;
 
-        public BookTicketService(AccelokaContext db)
+        public BookTicketCommandHandler(AccelokaContext db)
         {
             _db = db;
         }
 
-        public async Task<BookTicketResponse> BookTicket(BookTicketRequest request)
+        public async Task<BookTicketResponse> Handle(
+            BookTicketCommand command,
+            CancellationToken cancellationToken)
         {
-            // 1. Validasi input
-            if (request.Tickets == null || request.Tickets.Count == 0)
+            // 1. Validasi input manual (kalau masih perlu).
+            //    Sebenarnya kita bisa memindahkannya ke FluentValidation,
+            //    tapi kadang ada validasi yang lebih cocok di handler
+            //    (misal, cek data di DB).
+            if (command.Tickets == null || command.Tickets.Count == 0)
             {
                 throw new InvalidValidationException("The list of requested tickets is empty.");
             }
 
             // 2. Ambil data ticketCode yang di-request
-            var ticketCodes = request.Tickets.Select(x => x.TicketCode).Distinct().ToList();
+            var ticketCodes = command.Tickets.Select(x => x.TicketCode).Distinct().ToList();
 
             // 3. Ambil data tiket dari DB
             var ticketsInDb = await _db.Tickets
                 .Include(t => t.Category) // if we have a navigation property Category
                 .Where(t => ticketCodes.Contains(t.TicketCode))
-                .ToListAsync();
+                .ToListAsync(cancellationToken);
 
             // a. Cek apakah semua ticketCode valid
             if (ticketsInDb.Count != ticketCodes.Count)
@@ -44,7 +50,7 @@ namespace Acceloka.Services.Implementations
             var now = DateTimeOffset.UtcNow;
 
             // c. Lakukan validasi: quota habis, quantity melebihi quota, eventDate <= booking date
-            foreach (var item in request.Tickets)
+            foreach (var item in command.Tickets)
             {
                 var dbTicket = ticketsInDb.FirstOrDefault(t => t.TicketCode == item.TicketCode);
                 if (dbTicket == null)
@@ -75,7 +81,7 @@ namespace Acceloka.Services.Implementations
             // Siapkan list untuk menghitung summary
             var responseItems = new List<(string categoryName, string ticketCode, string ticketName, decimal totalPrice)>();
 
-            foreach (var item in request.Tickets)
+            foreach (var item in command.Tickets)
             {
                 var dbTicket = ticketsInDb.First(t => t.TicketCode == item.TicketCode);
 
@@ -99,7 +105,7 @@ namespace Acceloka.Services.Implementations
                 dbTicket.Quota -= item.Quantity;
             }
 
-            await _db.SaveChangesAsync();
+            await _db.SaveChangesAsync(cancellationToken);
 
             // 5. Group by categoryName & Summaries
             var grouped = responseItems
@@ -130,5 +136,4 @@ namespace Acceloka.Services.Implementations
             return response;
         }
     }
-
 }

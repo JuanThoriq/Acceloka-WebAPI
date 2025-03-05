@@ -37,17 +37,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BookTicketRequest"
+                "$ref": "#/components/schemas/BookTicketCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/BookTicketRequest"
+                "$ref": "#/components/schemas/BookTicketCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/BookTicketRequest"
+                "$ref": "#/components/schemas/BookTicketCommand"
               }
             }
           }
@@ -225,6 +225,19 @@
   },
   "components": {
     "schemas": {
+      "BookTicketCommand": {
+        "type": "object",
+        "properties": {
+          "tickets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookTicketItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "BookTicketItem": {
         "required": [
           "quantity",
@@ -241,22 +254,6 @@
             "minimum": 1,
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "BookTicketRequest": {
-        "required": [
-          "tickets"
-        ],
-        "type": "object",
-        "properties": {
-          "tickets": {
-            "minItems": 1,
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BookTicketItem"
-            }
           }
         },
         "additionalProperties": false

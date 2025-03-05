@@ -1,26 +1,26 @@
-﻿using Acceloka.Entities;
-using Acceloka.Models.Request;
+﻿using MediatR;
 using Acceloka.Models.Response;
-using Acceloka.Services.Interfaces;
-using Microsoft.IdentityModel.Tokens;
+using Acceloka.Entities;
 using Microsoft.EntityFrameworkCore;
 using Acceloka.Exceptions;
 
-
-namespace Acceloka.Services.Implementations
+namespace Acceloka.Features.Tickets.Queries.GetAvailableTicket
 {
-    public class AvailableTicketService : IAvailableTicketService
+    public class GetAvailableTicketQueryHandler
+        : IRequestHandler<GetAvailableTicketQuery, (List<AvailableTicketResponse>, int)>
     {
         private readonly AccelokaContext _db;
 
-        public AvailableTicketService(AccelokaContext db)
+        public GetAvailableTicketQueryHandler(AccelokaContext db)
         {
             _db = db;
         }
 
-        public async Task<(List<AvailableTicketResponse>, int)> GetAvailableTickets(AvailableTicketParam param)
+        public async Task<(List<AvailableTicketResponse>, int)> Handle(
+            GetAvailableTicketQuery request,
+            CancellationToken cancellationToken)
         {
-            // 1. Melakukan JOIN table Tickets dan Categories
+           // 1. Melakukan JOIN table Tickets dan Categories
             //    Menggunakan LINQ query syntax sesuai aturan (boleh query syntax untuk join)
             var query =
                 from t in _db.Tickets
@@ -40,35 +40,35 @@ namespace Acceloka.Services.Implementations
             query = query.Where(x => x.Quota > 0);
 
             // 3. Searching by kolom
-            if (!string.IsNullOrEmpty(param.CategoryName))
+            if (!string.IsNullOrEmpty(request.CategoryName))
             {
-                query = query.Where(x => x.CategoryName.Contains(param.CategoryName));
+                query = query.Where(x => x.CategoryName.Contains(request.CategoryName));
             }
-            if (!string.IsNullOrEmpty(param.TicketCode))
+            if (!string.IsNullOrEmpty(request.TicketCode))
             {
-                query = query.Where(x => x.TicketCode.Contains(param.TicketCode));
+                query = query.Where(x => x.TicketCode.Contains(request.TicketCode));
             }
-            if (!string.IsNullOrEmpty(param.TicketName))
+            if (!string.IsNullOrEmpty(request.TicketName))
             {
-                query = query.Where(x => x.TicketName.Contains(param.TicketName));
+                query = query.Where(x => x.TicketName.Contains(request.TicketName));
             }
-            if (param.Price.HasValue)
+            if (request.Price.HasValue)
             {
                 // harga <= yang diinput
-                query = query.Where(x => x.Price <= param.Price.Value);
+                query = query.Where(x => x.Price <= request .Price.Value);
             }
-            if (param.DateMin.HasValue)
+            if (request.DateMin.HasValue)
             {
-                query = query.Where(x => x.EventDate >= param.DateMin.Value);
+                query = query.Where(x => x.EventDate >= request.DateMin.Value);
             }
-            if (param.DateMax.HasValue)
+            if (request.DateMax.HasValue)
             {
-                query = query.Where(x => x.EventDate <= param.DateMax.Value);
+                query = query.Where(x => x.EventDate <= request.DateMax.Value);
             }
 
             // 4. Sorting
-            string orderBy = string.IsNullOrEmpty(param.OrderBy) ? "ticketCode" : param.OrderBy.ToLower();
-            string orderState = string.IsNullOrEmpty(param.OrderState) ? "asc" : param.OrderState.ToLower();
+            string orderBy = string.IsNullOrEmpty(request.OrderBy) ? "ticketCode" : request.OrderBy.ToLower();
+            string orderState = string.IsNullOrEmpty(request.OrderState) ? "asc" : request.OrderState.ToLower();
 
             // By default order by ticketCode ascending
             // if user menuliskan orderBy = "categoryname", "eventdate", "price", "ticketname", dsb.
@@ -103,16 +103,16 @@ namespace Acceloka.Services.Implementations
             });
 
             // 6. Bonus: pagination 10 item per page dan total records
-            int totalRecords = await selectQuery.CountAsync();
+            int totalRecords = await selectQuery.CountAsync(cancellationToken);
 
             int pageSize = 10;
-            int page = param.Page.HasValue && param.Page.Value > 0 ? param.Page.Value : 1;
+            int page = request.Page <= 0 ? 1 : request.Page;
             int skip = (page - 1) * pageSize;
 
             selectQuery = selectQuery.Skip(skip).Take(pageSize);
 
             // 7. Eksekusi query
-            var result = await selectQuery.ToListAsync();
+            var result = await selectQuery.ToListAsync(cancellationToken);
             if (!result.Any())
             {
                 throw new InvalidValidationException("No tickets found for the given criteria.");
