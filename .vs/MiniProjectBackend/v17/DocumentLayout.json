@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B32107C2-EA55-47EC-A483-734D3E9EA197}|Acceloka.Entities\\Acceloka.Entities.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka.entities\\accelokacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B32107C2-EA55-47EC-A483-734D3E9EA197}|Acceloka.Entities\\Acceloka.Entities.csproj|solutionrelative:acceloka.entities\\accelokacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|c:\\users\\juanthoriq\\onedrive - bina nusantara\\documents\\accelist training\\mini project\\miniprojectbackend\\acceloka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67273F7F-E7CC-4D94-B968-15665948CC46}|Acceloka\\Acceloka.csproj|solutionrelative:acceloka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccelokaContext.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka.Entities\\AccelokaContext.cs",
-              "RelativeDocumentMoniker": "Acceloka.Entities\\AccelokaContext.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka.Entities\\AccelokaContext.cs",
-              "RelativeToolTip": "Acceloka.Entities\\AccelokaContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:12:33.523Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Program.cs",
-              "RelativeDocumentMoniker": "Acceloka\\Program.cs",
-              "ToolTip": "C:\\Users\\JuanThoriq\\OneDrive - Bina Nusantara\\Documents\\Accelist Training\\Mini Project\\MiniProjectBackend\\Acceloka\\Program.cs",
-              "RelativeToolTip": "Acceloka\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T14:00:57.919Z",
-              "EditorCaption": ""
             }
           ]
         }

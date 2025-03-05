@@ -1,8 +1,11 @@
 ﻿using Acceloka.Exceptions;
+using Acceloka.Features.Tickets.Queries.GetAvailableTicket;
 using Acceloka.Models.Request;
 using Acceloka.Services.Interfaces;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,25 +15,25 @@ namespace Acceloka.Controllers
     [ApiController]
     public class TicketController : ControllerBase
     {
-        private readonly IAvailableTicketService _availableTicketService;
+        private readonly IMediator _mediator;
         private readonly ILogger<TicketController> _logger; // Logger untuk TicketController
 
 
-        public TicketController(IAvailableTicketService availableTicketService, ILogger<TicketController> logger)
+        public TicketController(IMediator mediator, ILogger<TicketController> logger)
         {
-            _availableTicketService = availableTicketService;
+            _mediator = mediator;
             _logger = logger;
         }
 
         // GET: api/<TicketController>
         [HttpGet("get-available-ticket")]
-        public async Task<IActionResult> GetAvailableTicket([FromQuery] AvailableTicketParam param)
+        public async Task<IActionResult> GetAvailableTicket([FromQuery] GetAvailableTicketQuery query)
         {
             // Log informasi awal pemanggilan endpoint
-            _logger.LogInformation("Received request to GET available tickets with param: {@param}", param);
+            _logger.LogInformation("Received request to GET available tickets with param: {@param}", query);
             try
             {
-                var (datas, totalRecords) = await _availableTicketService.GetAvailableTickets(param);
+                var (datas, totalRecords) = await _mediator.Send(query);
 
                 // Log sukses
                 _logger.LogInformation(
@@ -50,7 +53,7 @@ namespace Acceloka.Controllers
             {
                 _logger.LogWarning(ex,
                    "Validation error occurred while getting tickets with param: {@param}",
-                   param
+                   query
                );
 
                 // RFC 7807
@@ -63,7 +66,7 @@ namespace Acceloka.Controllers
             {
                 _logger.LogError(ex,
                     "Unhandled exception while getting tickets with param: {@param}",
-                    param
+                    query
                 );
 
                 // RFC 7807

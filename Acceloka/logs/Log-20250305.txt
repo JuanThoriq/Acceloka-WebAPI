@@ -1,0 +1,302 @@
+2025-03-05 02:47:37.887 +07:00 [INF] Now listening on: http://localhost:5013
+2025-03-05 02:47:37.989 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-05 02:47:37.989 +07:00 [INF] Hosting environment: Development
+2025-03-05 02:47:37.989 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-03-05 02:47:39.684 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger - null null
+2025-03-05 02:47:39.859 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger - 301 0 null 183.7857ms
+2025-03-05 02:47:39.860 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-03-05 02:47:39.911 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 51.5151ms
+2025-03-05 02:47:39.920 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/swagger-ui-bundle.js - null null
+2025-03-05 02:47:39.920 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/swagger-ui.css - null null
+2025-03-05 02:47:39.921 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-05 02:47:39.965 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-05 02:47:39.965 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-05 02:47:39.967 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 46.0666ms
+2025-03-05 02:47:39.967 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/swagger-ui.css - 200 152034 text/css 46.9992ms
+2025-03-05 02:47:39.969 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-05 02:47:39.970 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 49.9525ms
+2025-03-05 02:47:40.216 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-05 02:47:40.216 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-03-05 02:47:40.217 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.8342ms
+2025-03-05 02:47:40.223 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/favicon-32x32.png - null null
+2025-03-05 02:47:40.224 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-05 02:47:40.224 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/favicon-32x32.png - 200 628 image/png 2.4061ms
+2025-03-05 02:47:40.257 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.0467ms
+2025-03-05 02:47:40.302 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-03-05 02:47:40.316 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.3093ms
+2025-03-05 02:47:51.623 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=-1 - null null
+2025-03-05 02:47:51.630 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 02:47:51.660 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Models.Request.AvailableTicketParam) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 02:47:51.864 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":-1,"$type":"AvailableTicketParam"}
+2025-03-05 02:47:52.908 +07:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 02:47:52.968 +07:00 [INF] Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-05 02:47:52.973 +07:00 [INF] Successfully retrieved 10 tickets. Total records: 10
+2025-03-05 02:47:52.979 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.List`1[[Acceloka.Models.Response.AvailableTicketResponse, Acceloka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-05 02:47:52.996 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 1333.2876ms
+2025-03-05 02:47:52.997 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 02:47:53.003 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=-1 - 200 null application/json; charset=utf-8 1379.8851ms
+2025-03-05 02:48:06.917 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Price=-1 - null null
+2025-03-05 02:48:06.919 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 02:48:06.919 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Models.Request.AvailableTicketParam) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 02:48:06.922 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":-1,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":null,"$type":"AvailableTicketParam"}
+2025-03-05 02:48:06.934 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__param_Price_Value_0='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0 AND [t].[Price] <= @__param_Price_Value_0
+2025-03-05 02:48:06.940 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__param_Price_Value_0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0 AND [t].[Price] <= @__param_Price_Value_0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-03-05 02:48:07.001 +07:00 [WRN] Validation error occurred while getting tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":-1,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":null,"$type":"AvailableTicketParam"}
+Acceloka.Exceptions.InvalidValidationException: No tickets found for the given criteria.
+   at Acceloka.Services.Implementations.AvailableTicketService.GetAvailableTickets(AvailableTicketParam param) in C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\Services\Implementations\AvailableTicketService.cs:line 118
+   at Acceloka.Controllers.TicketController.GetAvailableTicket(AvailableTicketParam param) in C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\Controllers\TicketController.cs:line 33
+2025-03-05 02:48:07.034 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-03-05 02:48:07.046 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 127.534ms
+2025-03-05 02:48:07.047 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 02:48:07.047 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Price=-1 - 404 null application/problem+json; charset=utf-8 129.7762ms
+2025-03-05 03:27:33.008 +07:00 [INF] Now listening on: http://localhost:5013
+2025-03-05 03:27:33.088 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-05 03:27:33.089 +07:00 [INF] Hosting environment: Development
+2025-03-05 03:27:33.089 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-03-05 03:27:33.763 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-03-05 03:27:33.985 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 231.5952ms
+2025-03-05 03:27:34.293 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-05 03:27:34.293 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-03-05 03:27:34.296 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.7029ms
+2025-03-05 03:27:34.341 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.3402ms
+2025-03-05 03:27:34.373 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-03-05 03:27:34.391 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.7659ms
+2025-03-05 03:27:41.746 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - null null
+2025-03-05 03:27:41.752 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 03:27:41.775 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Models.Request.AvailableTicketParam) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 03:27:41.893 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":null,"$type":"AvailableTicketParam"}
+2025-03-05 03:27:42.788 +07:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 03:27:42.840 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-05 03:27:42.845 +07:00 [INF] Successfully retrieved 10 tickets. Total records: 10
+2025-03-05 03:27:42.851 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.List`1[[Acceloka.Models.Response.AvailableTicketResponse, Acceloka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-05 03:27:42.866 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 1089.1375ms
+2025-03-05 03:27:42.867 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 03:27:42.873 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - 200 null application/json; charset=utf-8 1127.7718ms
+2025-03-05 10:47:18.437 +07:00 [INF] Now listening on: http://localhost:5013
+2025-03-05 10:47:18.612 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-05 10:47:18.613 +07:00 [INF] Hosting environment: Development
+2025-03-05 10:47:18.613 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-03-05 10:47:19.276 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-03-05 10:47:19.495 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 228.2467ms
+2025-03-05 10:47:19.504 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-05 10:47:19.507 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.078ms
+2025-03-05 10:47:19.909 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-03-05 10:47:20.030 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.1418ms
+2025-03-05 10:47:20.103 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-03-05 10:47:20.119 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.9689ms
+2025-03-05 10:48:00.977 +07:00 [INF] Now listening on: http://localhost:5013
+2025-03-05 10:48:01.050 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-05 10:48:01.051 +07:00 [INF] Hosting environment: Development
+2025-03-05 10:48:01.051 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-03-05 10:48:01.885 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-03-05 10:48:02.054 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 174.4057ms
+2025-03-05 10:48:02.061 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-05 10:48:02.064 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.7669ms
+2025-03-05 10:48:02.488 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-03-05 10:48:02.518 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.3851ms
+2025-03-05 10:48:02.667 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-03-05 10:48:02.682 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.0528ms
+2025-03-05 10:48:07.914 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - null null
+2025-03-05 10:48:07.924 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 10:48:07.969 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Models.Request.AvailableTicketParam) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 10:48:08.228 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":null,"$type":"AvailableTicketParam"}
+2025-03-05 10:48:09.973 +07:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 10:48:10.075 +07:00 [INF] Executed DbCommand (31ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-05 10:48:10.086 +07:00 [INF] Successfully retrieved 10 tickets. Total records: 10
+2025-03-05 10:48:10.098 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.List`1[[Acceloka.Models.Response.AvailableTicketResponse, Acceloka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-05 10:48:10.129 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 2155.6867ms
+2025-03-05 10:48:10.130 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 10:48:10.144 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - 200 null application/json; charset=utf-8 2230.0519ms
+2025-03-05 16:35:49.491 +07:00 [INF] Now listening on: http://localhost:5013
+2025-03-05 16:35:49.583 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-05 16:35:49.584 +07:00 [INF] Hosting environment: Development
+2025-03-05 16:35:49.584 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-03-05 16:35:50.871 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-03-05 16:35:51.049 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 188.0344ms
+2025-03-05 16:35:51.340 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-03-05 16:35:51.340 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-05 16:35:51.342 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 2.4844ms
+2025-03-05 16:35:51.364 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.8858ms
+2025-03-05 16:35:51.397 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-03-05 16:35:51.415 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.2922ms
+2025-03-05 16:35:56.688 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - null null
+2025-03-05 16:35:56.698 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:35:56.739 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 16:35:56.830 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":1,"$type":"GetAvailableTicketQuery"}
+2025-03-05 16:35:58.427 +07:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 16:35:58.508 +07:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-05 16:35:58.515 +07:00 [INF] Successfully retrieved 10 tickets. Total records: 10
+2025-03-05 16:35:58.525 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.List`1[[Acceloka.Models.Response.AvailableTicketResponse, Acceloka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-05 16:35:58.553 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 1810.5675ms
+2025-03-05 16:35:58.553 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:35:58.563 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - 200 null application/json; charset=utf-8 1875.0472ms
+2025-03-05 16:36:08.290 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Price=-1 - null null
+2025-03-05 16:36:08.291 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:08.292 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 16:36:08.321 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-05 16:36:08.344 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 51.498ms
+2025-03-05 16:36:08.344 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:08.344 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Price=-1 - 400 null application/problem+json; charset=utf-8 54.2436ms
+2025-03-05 16:36:19.531 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=-1 - null null
+2025-03-05 16:36:19.531 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:19.531 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 16:36:19.535 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-05 16:36:19.536 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 4.3992ms
+2025-03-05 16:36:19.536 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:19.536 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=-1 - 400 null application/problem+json; charset=utf-8 5.4247ms
+2025-03-05 16:36:25.260 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=0 - null null
+2025-03-05 16:36:25.261 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:25.261 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 16:36:25.262 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-05 16:36:25.262 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 0.882ms
+2025-03-05 16:36:25.262 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:25.262 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=0 - 400 null application/problem+json; charset=utf-8 2.0208ms
+2025-03-05 16:36:30.390 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=1 - null null
+2025-03-05 16:36:30.390 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:30.390 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 16:36:30.391 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":1,"$type":"GetAvailableTicketQuery"}
+2025-03-05 16:36:30.408 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 16:36:30.414 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-05 16:36:30.415 +07:00 [INF] Successfully retrieved 10 tickets. Total records: 10
+2025-03-05 16:36:30.415 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.List`1[[Acceloka.Models.Response.AvailableTicketResponse, Acceloka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-05 16:36:30.416 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 25.6436ms
+2025-03-05 16:36:30.416 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:30.416 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=1 - 200 null application/json; charset=utf-8 26.5185ms
+2025-03-05 16:36:44.599 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=2 - null null
+2025-03-05 16:36:44.599 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:44.599 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 16:36:44.600 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":2,"$type":"GetAvailableTicketQuery"}
+2025-03-05 16:36:44.605 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 16:36:44.621 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2025-03-05 16:36:44.687 +07:00 [WRN] Validation error occurred while getting tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":2,"$type":"GetAvailableTicketQuery"}
+Acceloka.Exceptions.InvalidValidationException: No tickets found for the given criteria.
+   at Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQueryHandler.Handle(GetAvailableTicketQuery request, CancellationToken cancellationToken) in C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\Features\Tickets\Queries\GetAvailableTicket\GetAvailableTicketQueryHandler.cs:line 118
+   at Acceloka.Controllers.TicketController.GetAvailableTicket(GetAvailableTicketQuery query) in C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka\Controllers\TicketController.cs:line 36
+2025-03-05 16:36:44.722 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-03-05 16:36:44.724 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 125.3551ms
+2025-03-05 16:36:44.725 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:44.725 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?Page=2 - 404 null application/problem+json; charset=utf-8 126.1778ms
+2025-03-05 16:36:58.546 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?OrderState=a - null null
+2025-03-05 16:36:58.547 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:58.547 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 16:36:58.548 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":"a","Page":1,"$type":"GetAvailableTicketQuery"}
+2025-03-05 16:36:58.551 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 16:36:58.559 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-05 16:36:58.559 +07:00 [INF] Successfully retrieved 10 tickets. Total records: 10
+2025-03-05 16:36:58.559 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.List`1[[Acceloka.Models.Response.AvailableTicketResponse, Acceloka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-05 16:36:58.559 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 12.3871ms
+2025-03-05 16:36:58.559 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 16:36:58.559 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket?OrderState=a - 200 null application/json; charset=utf-8 13.4013ms
+2025-03-05 16:38:01.423 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5013/api/v1/book-ticket - application/json 83
+2025-03-05 16:38:01.424 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.BookingController.BookTicket (Acceloka)'
+2025-03-05 16:38:01.430 +07:00 [INF] Route matched with {action = "BookTicket", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BookTicket(Acceloka.Features.Booking.Commands.BookTicket.BookTicketCommand) on controller Acceloka.Controllers.BookingController (Acceloka).
+2025-03-05 16:38:01.496 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-05 16:38:01.497 +07:00 [INF] Executed action Acceloka.Controllers.BookingController.BookTicket (Acceloka) in 66.2414ms
+2025-03-05 16:38:01.497 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.BookingController.BookTicket (Acceloka)'
+2025-03-05 16:38:01.497 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5013/api/v1/book-ticket - 400 null application/problem+json; charset=utf-8 73.6265ms
+2025-03-05 16:38:16.494 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5013/api/v1/book-ticket - application/json 83
+2025-03-05 16:38:16.494 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.BookingController.BookTicket (Acceloka)'
+2025-03-05 16:38:16.494 +07:00 [INF] Route matched with {action = "BookTicket", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BookTicket(Acceloka.Features.Booking.Commands.BookTicket.BookTicketCommand) on controller Acceloka.Controllers.BookingController (Acceloka).
+2025-03-05 16:38:16.498 +07:00 [INF] Received POST request for booking tickets: {"Tickets":[{"TicketCode":"CN002","Quantity":1,"$type":"BookTicketItem"}],"$type":"BookTicketCommand"}
+2025-03-05 16:38:16.499 +07:00 [WRN] Invalid model state for booking request: {"Tickets":[{"TicketCode":"CN002","Quantity":1,"$type":"BookTicketItem"}],"$type":"BookTicketCommand"}
+2025-03-05 16:38:16.659 +07:00 [INF] Executed DbCommand (17ms) [Parameters=[@__ticketCodes_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TicketId], [t].[CategoryId], [t].[CreatedAt], [t].[EventDate], [t].[Price], [t].[Quota], [t].[TicketCode], [t].[TicketName], [t].[UpdatedAt], [c].[CategoryId], [c].[CategoryName], [c].[CreatedAt], [c].[UpdatedAt]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[TicketCode] IN (
+    SELECT [t0].[value]
+    FROM OPENJSON(@__ticketCodes_0) WITH ([value] varchar(50) '$') AS [t0]
+)
+2025-03-05 16:38:16.960 +07:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Int32), @p4='?' (DbType = Guid), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [BookedTickets] ([BookedTicketId], [TicketId], [Quantity])
+OUTPUT INSERTED.[CreatedAt], INSERTED.[UpdatedAt]
+VALUES (@p0, @p1, @p2);
+UPDATE [Tickets] SET [Quota] = @p3
+OUTPUT 1
+WHERE [TicketId] = @p4;
+2025-03-05 16:38:17.002 +07:00 [INF] Successfully booked tickets.
+2025-03-05 16:38:17.002 +07:00 [INF] Executing OkObjectResult, writing value of type 'Acceloka.Models.Response.BookTicketResponse'.
+2025-03-05 16:38:17.005 +07:00 [INF] Executed action Acceloka.Controllers.BookingController.BookTicket (Acceloka) in 511.403ms
+2025-03-05 16:38:17.005 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.BookingController.BookTicket (Acceloka)'
+2025-03-05 16:38:17.006 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5013/api/v1/book-ticket - 200 null application/json; charset=utf-8 512.4646ms

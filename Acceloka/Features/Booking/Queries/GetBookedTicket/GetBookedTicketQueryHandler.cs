@@ -1,23 +1,27 @@
-﻿using Acceloka.Entities;
+﻿using MediatR;
+using Acceloka.Entities;
 using Acceloka.Exceptions;
 using Acceloka.Models.Response;
-using Acceloka.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-
-namespace Acceloka.Services.Implementations
+namespace Acceloka.Features.Booking.Queries.GetBookedTicket
 {
-    public class BookedTicketDetailService : IBookedTicketDetailService
+    public class GetBookedTicketQueryHandler
+        : IRequestHandler<GetBookedTicketQuery, List<BookedTicketDetailCategory>>
     {
         private readonly AccelokaContext _db;
 
-        public BookedTicketDetailService(AccelokaContext db)
+        public GetBookedTicketQueryHandler(AccelokaContext db)
         {
             _db = db;
         }
 
-        public async Task<List<BookedTicketDetailCategory>> GetBookedTicketDetail(Guid bookedTicketId)
+        public async Task<List<BookedTicketDetailCategory>> Handle(
+            GetBookedTicketQuery request,
+            CancellationToken cancellationToken)
         {
+            var bookedTicketId = request.BookedTicketId;
+
             // 1. Ambil baris BookedTickets yang sesuai BookedTicketId, join ke Tickets & Categories
             //    Menggunakan LINQ query syntax (boleh, karena ada join)
             var bookedRows = await (
@@ -33,12 +37,11 @@ namespace Acceloka.Services.Implementations
                     t.EventDate,
                     c.CategoryName
                 }
-            ).ToListAsync();
+            ).ToListAsync(cancellationToken);
 
             // 2. Validasi: jika tidak ada baris, berarti BookedTicketId tidak terdaftar
             if (!bookedRows.Any())
             {
-                // Boleh lempar Exception, nanti di controller tangkap
                 throw new InvalidValidationException("The specified BookedTicketId is not registered.");
             }
 

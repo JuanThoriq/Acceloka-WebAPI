@@ -3,6 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Acceloka.Services.Implementations;
 using Acceloka.Services.Interfaces;
 using Serilog;
+using MediatR;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,19 +46,37 @@ builder.Services.AddDbContextPool<AccelokaContext>(options =>
 // 4. Registrasi Service (DI)
 // ----------------------------------------------------------------
 // Service untuk booking tiket
-builder.Services.AddScoped<IBookTicketService, BookTicketService>();
+//builder.Services.AddScoped<IBookTicketService, BookTicketService>();
 
 //// Service untuk mendapatkan available ticket
-builder.Services.AddScoped<IAvailableTicketService, AvailableTicketService>();
+//builder.Services.AddScoped<IAvailableTicketService, AvailableTicketService>();
 
 //// Service untuk mendapatkan detail booked ticket
-builder.Services.AddScoped<IBookedTicketDetailService, BookedTicketDetailService>();
+//builder.Services.AddScoped<IBookedTicketDetailService, BookedTicketDetailService>();
 
 //// Service untuk revoke ticket
-builder.Services.AddScoped<IRevokeTicketService, RevokeTicketService>();
+//builder.Services.AddScoped<IRevokeTicketService, RevokeTicketService>();
 
 //// Service untuk edit booked ticket
-builder.Services.AddScoped<IEditBookedTicketService, EditBookedTicketService>();
+//builder.Services.AddScoped<IEditBookedTicketService, EditBookedTicketService>();
+
+//// Service untuk MediatR
+builder.Services.AddMediatR(cfg => {
+    // Di sini kita register assembly
+    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
+});
+
+//// Service untuk FluentValidation
+// 1.Tambahkan MVC/Controllers
+builder.Services.AddControllers();
+
+// 2. Registrasi FluentValidation
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+
+// 3. Daftarkan semua validator di assembly ini
+builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
+
 
 // ----------------------------------------------------------------
 // 5. Registrasi Controller
