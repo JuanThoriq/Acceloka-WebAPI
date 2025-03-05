@@ -5,7 +5,6 @@ using Acceloka.Features.Booking.Commands.EditBookedTicket;
 using Acceloka.Features.Booking.Commands.RevokeTicket;
 using Acceloka.Features.Booking.Queries.GetBookedTicket;
 using Acceloka.Models.Request;
-using Acceloka.Services.Interfaces;
 using Azure.Core;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +26,7 @@ namespace Acceloka.Controllers
         private readonly ILogger<BookingController> _logger; // Injeksi logger
 
         // DI Services
-        public BookingController( IMediator mediator, IRevokeTicketService revokeTicketService, IEditBookedTicketService editBookedTicketService, ILogger<BookingController> logger)
+        public BookingController( IMediator mediator, ILogger<BookingController> logger)
         {
             _mediator = mediator;
             _logger = logger;

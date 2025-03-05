@@ -300,3 +300,48 @@ WHERE [TicketId] = @p4;
 2025-03-05 16:38:17.005 +07:00 [INF] Executed action Acceloka.Controllers.BookingController.BookTicket (Acceloka) in 511.403ms
 2025-03-05 16:38:17.005 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.BookingController.BookTicket (Acceloka)'
 2025-03-05 16:38:17.006 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5013/api/v1/book-ticket - 200 null application/json; charset=utf-8 512.4646ms
+2025-03-05 23:41:41.168 +07:00 [INF] Now listening on: http://localhost:5013
+2025-03-05 23:41:41.245 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-05 23:41:41.246 +07:00 [INF] Hosting environment: Development
+2025-03-05 23:41:41.246 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-03-05 23:41:41.547 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-03-05 23:41:41.770 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 232.9806ms
+2025-03-05 23:41:41.983 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-03-05 23:41:41.983 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-05 23:41:41.986 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 3.6425ms
+2025-03-05 23:41:42.021 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.1951ms
+2025-03-05 23:41:42.051 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-03-05 23:41:42.064 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.6853ms
+2025-03-05 23:45:18.649 +07:00 [INF] Now listening on: http://localhost:5013
+2025-03-05 23:45:18.733 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-05 23:45:18.734 +07:00 [INF] Hosting environment: Development
+2025-03-05 23:45:18.734 +07:00 [INF] Content root path: C:\Users\JuanThoriq\OneDrive - Bina Nusantara\Documents\Accelist Training\Mini Project\MiniProjectBackend\Acceloka
+2025-03-05 23:45:19.274 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/index.html - null null
+2025-03-05 23:45:19.472 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/index.html - 200 null text/html;charset=utf-8 205.7775ms
+2025-03-05 23:45:19.706 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_vs/browserLink - null null
+2025-03-05 23:45:19.706 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-05 23:45:19.709 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 4.1047ms
+2025-03-05 23:45:19.736 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.6868ms
+2025-03-05 23:45:19.764 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - null null
+2025-03-05 23:45:19.777 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.6808ms
+2025-03-05 23:45:28.236 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - null null
+2025-03-05 23:45:28.241 +07:00 [INF] Executing endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 23:45:28.265 +07:00 [INF] Route matched with {action = "GetAvailableTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAvailableTicket(Acceloka.Features.Tickets.Queries.GetAvailableTicket.GetAvailableTicketQuery) on controller Acceloka.Controllers.TicketController (Acceloka).
+2025-03-05 23:45:28.312 +07:00 [INF] Received request to GET available tickets with param: {"CategoryName":null,"TicketCode":null,"TicketName":null,"Price":null,"DateMin":null,"DateMax":null,"OrderBy":null,"OrderState":null,"Page":1,"$type":"GetAvailableTicketQuery"}
+2025-03-05 23:45:29.472 +07:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+2025-03-05 23:45:29.526 +07:00 [INF] Executed DbCommand (21ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName], [t].[TicketCode], [t].[TicketName], [t].[EventDate], [t].[Price], [t].[Quota]
+FROM [Tickets] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[CategoryId]
+WHERE [t].[Quota] > 0
+ORDER BY [t].[TicketCode]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-05 23:45:29.532 +07:00 [INF] Successfully retrieved 10 tickets. Total records: 10
+2025-03-05 23:45:29.538 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.List`1[[Acceloka.Models.Response.AvailableTicketResponse, Acceloka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-05 23:45:29.553 +07:00 [INF] Executed action Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka) in 1285.7994ms
+2025-03-05 23:45:29.554 +07:00 [INF] Executed endpoint 'Acceloka.Controllers.TicketController.GetAvailableTicket (Acceloka)'
+2025-03-05 23:45:29.562 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5013/api/v1/get-available-ticket - 200 null application/json; charset=utf-8 1326.4879ms
