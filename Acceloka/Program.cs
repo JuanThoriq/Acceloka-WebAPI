@@ -1,7 +1,5 @@
 using Acceloka.Entities;
 using Microsoft.EntityFrameworkCore;
-using Acceloka.Services.Implementations;
-using Acceloka.Services.Interfaces;
 using Serilog;
 using MediatR;
 using FluentValidation.AspNetCore;

@@ -1,7 +1,6 @@
 ﻿using Acceloka.Exceptions;
 using Acceloka.Features.Tickets.Queries.GetAvailableTicket;
 using Acceloka.Models.Request;
-using Acceloka.Services.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;

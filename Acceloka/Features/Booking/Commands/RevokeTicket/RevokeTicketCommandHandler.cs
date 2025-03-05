@@ -89,7 +89,7 @@ namespace Acceloka.Features.Booking.Commands.RevokeTicket
             {
                 TicketCode = row.TicketCode,
                 TicketName = row.TicketName,
-                Quantity = sisaQuantity > 0 ? sisaQuantity : 0
+                Quantity = sisaQuantity > 0 ? sisaQuantity : 0,
                 CategoryName = row.CategoryName,
             };
 
