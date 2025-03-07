@@ -60,10 +60,25 @@ namespace Acceloka.Features.Booking.Commands.EditBookedTicket
 
                 // c. Cek sisa quota di table Tickets
                 var ticketInDb = row.Ticket;
+                int currentBookedQty = row.Quantity; // quantity lama
+
                 if (item.Quantity > ticketInDb.Quota)
                 {
                     throw new InvalidValidationException(
                         $"The requested quantity {item.Quantity} exceeds the remaining quota {ticketInDb.Quota}.");
+                }
+
+                // Tambahkan logic update quota:
+                int diff = item.Quantity - currentBookedQty;
+                if (diff > 0)
+                {
+                    // User menambah quantity → kurangi quota
+                    ticketInDb.Quota -= diff;
+                }
+                else if (diff < 0)
+                {
+                    // User mengurangi quantity → tambahkan quota
+                    ticketInDb.Quota += Math.Abs(diff);
                 }
 
                 // d. Update BookedTickets

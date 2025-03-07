@@ -5,6 +5,7 @@ using Acceloka.Features.Booking.Commands.EditBookedTicket;
 using Acceloka.Features.Booking.Commands.RevokeTicket;
 using Acceloka.Features.Booking.Queries.GetBookedTicket;
 using Acceloka.Models.Request;
+using Acceloka.Models.Response;
 using Azure.Core;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -43,7 +44,7 @@ namespace Acceloka.Controllers
                 // Buat query object
                 var query = new GetBookedTicketQuery(bookedTicketId);
 
-                var data = await _mediator.Send(bookedTicketId);
+                var data = await _mediator.Send(query);
                 _logger.LogInformation("Successfully retrieved booked ticket details for ID: {bookedTicketId}", bookedTicketId);
                 // Sukses -> return 200 OK
                 return Ok(data);

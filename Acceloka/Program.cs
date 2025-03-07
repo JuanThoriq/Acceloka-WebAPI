@@ -75,6 +75,16 @@ builder.Services.AddFluentValidationClientsideAdapters();
 // 3. Daftarkan semua validator di assembly ini
 builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
+//// Service untuk CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
 // ----------------------------------------------------------------
 // 5. Registrasi Controller
@@ -88,6 +98,9 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// Use policy CORS
+app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

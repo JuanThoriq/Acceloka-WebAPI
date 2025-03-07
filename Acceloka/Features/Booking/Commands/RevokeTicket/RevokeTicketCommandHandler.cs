@@ -49,6 +49,11 @@ namespace Acceloka.Features.Booking.Commands.RevokeTicket
                 throw new InvalidValidationException($"The requested quantity {command.Qty} exceeds the previously booked quantity {row.b.Quantity}.");
             }
 
+            if (command.Qty <= 0)
+            {
+                throw new InvalidValidationException("Quantity must be greater than zero.");
+            }
+
             // 3. Update kolom Quantity dan Quota
             row.b.Quantity -= command.Qty;
             int sisaQuantity = row.b.Quantity;
